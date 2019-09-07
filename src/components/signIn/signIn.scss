@@ -1,0 +1,17 @@
+.sign-in {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+
+        &__input {
+            // ...
+        }
+
+        &__button {
+            width: 50%;
+            align-self: center;
+        }
+    }
+}

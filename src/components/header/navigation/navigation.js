@@ -1,11 +1,15 @@
 import React from "react"
 import "./navigation.scss"
+import { Link } from "react-router-dom"
 
 const navigation = (props) => {
     return (
         <div className="navigation">
             <div className="navigation__button">
-                { props.loggedIn ? " Log Out" : "Log In" }
+                <Link to="/">Home</Link>
+            </div>
+            <div className="navigation__button">
+                <Link to="/signin">Log In</Link>
             </div>
         </div>
     )
