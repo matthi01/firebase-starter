@@ -2,10 +2,10 @@ import React from "react"
 import "./header.scss"
 import Navigation from "./navigation/navigation"
 
-const header = () => {
+const header = (props) => {
     return (
         <div className="header">
-            <Navigation />
+            <Navigation currentUser={ props.currentUser } />
         </div>
     )
 }

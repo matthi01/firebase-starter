@@ -29,7 +29,7 @@ class SignUp extends React.Component {
         return (
             <div className="sign-up">
                 <form className="sign-up__form" onSubmit={ this.handleSubmit }>
-                    <h3>Sign Up:</h3>
+                    <h3>New User Sign Up:</h3>
                     <TextField
                         id="standard-email-input"
                         label="Email"
@@ -52,6 +52,17 @@ class SignUp extends React.Component {
                         onChange={ this.handleChange } 
                         value={ this.state.password }
                     />
+                    <TextField
+                        id="standard-password-confirmation-input"
+                        label="Confirm Password"
+                        type="password"
+                        margin="normal"
+                        required
+                        name="password-confirm"
+                        className="sign-up__form__input"
+                        onChange={ this.handleChange } 
+                        value={ this.state.password }
+                    />
                     <Button 
                         variant="contained" 
                         color="primary" 
@@ -59,14 +70,7 @@ class SignUp extends React.Component {
                         style={{ display: "block", marginTop: "30px", marginBottom: "15px" }}
                         type="submit"
                         onClick={ this.handleSubmit }>
-                            Sign In
-                    </Button>
-                    <Button 
-                        variant="contained" 
-                        color="primary" 
-                        className="sign-up__form__button"
-                        onClick={ signInWithGoogle }>
-                            Sign In with Google
+                            Sign Up
                     </Button>
                 </form>
             </div>
